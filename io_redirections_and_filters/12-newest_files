@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt --time-style=+ | awk '{print $NF}' | head -n 10
+ls -lt | grep '^-' | head -n 10
