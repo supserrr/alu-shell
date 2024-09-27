@@ -1,2 +1,6 @@
 #!/bin/bash
-while read line+ do printf "%s" "${line:0:1}"+ done
+result=""
+while IFS= read -r line; do
+    result+="${line:0:1}"
+done
+echo "$result"
