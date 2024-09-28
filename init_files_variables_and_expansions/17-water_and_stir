@@ -1,2 +1,2 @@
 #!/bin/bash
-result=$(printf "%o\n" $(( 5#$(echo $WATER | tr 'water' '01234') + 3#$(echo $STIR | tr 'stir.' '01234') ))); echo "$result" | tr '01234567' 'bestchol' | tee >(rev | tee >(rev))
+printf "%o\n" $(( 5#$(echo $WATER | tr 'water' '01234') + 3#$(echo $STIR | tr 'stir.' '01234') )) | tr '01234567' 'bestchol' | tr '0123456789' 'shtbeolhc'
