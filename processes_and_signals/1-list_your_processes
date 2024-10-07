@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# This script displays a list of all running processes in a user-oriented format, including the process hierarchy
-ps -eH -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd
+# This script lists all running processes for all users in a hierarchical format with the correct headers.
+
+ps -eH -o user,start,cmd
