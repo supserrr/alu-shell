@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script lists all running processes for all users in a hierarchical format with the correct headers.
+# This script lists all running processes with limited character lengths for fields like USER and COMMAND.
 
-ps -eH -o user,start,cmd
+ps -eH -o user:5,start:5,comm:27
