@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# A Bash script that trys to stop 7-highlander and fails
+pkill -f ./7-highlander 
